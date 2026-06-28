@@ -1,4 +1,7 @@
-# ⚙️ Bloxstrap
+# ⚙️ Bloxstrap v2.0
+
+<img width="1280" height="720" alt="i (1)" src="https://github.com/user-attachments/assets/04001372-a107-4be8-9d36-85637d5011cf" />
+
 
 > An advanced, open-source bootstrapper and launcher for Roblox on Windows, designed to replace the stock client.
 
@@ -29,7 +32,7 @@ Is the default Roblox launcher too limiting? **Bloxstrap** completely redefines 
 | **Monthly Downloads** | 📈 **150,000+** | Growing steadily |
 | **License** | 🔓 **Open-Source (MIT)** | 100% Free forever |
 | **Security** | 🛡️ **100% Safe** | Digitally signed via SignPath |
-| **Compatibility** | 💻 **Windows 10 / 11** | Requires .NET 6 Desktop Runtime |
+| **Compatibility** | 💻 **Windows 10 / 11**, MacOS | Requires .NET 6 Desktop Runtime |
 
 ---
 
