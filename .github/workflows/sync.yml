@@ -1,0 +1,40 @@
+name: Sync Fork Every 10 Mins
+
+on:
+  schedule:
+    # Запуск каждые 10 минут
+    - cron: '*/10 * * * *'
+  workflow_dispatch: # Позволяет запустить обновление вручную кнопкой в GitHub
+
+jobs:
+  sync:
+    runs-steps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Sync with Upstream
+        run: |
+          # Настраиваем профиль Git
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          
+          # Добавляем оригинальный репозиторий Bloxstrap как источник (upstream)
+          # Замените ссылку ниже, если синхронизируетесь с другим автором
+          git remote add upstream https://github.com/pizzaboxer/bloxstrap.git
+          
+          # Скачиваем изменения
+          git fetch upstream
+          
+          # Переключаемся на вашу основную ветку (main или master)
+          git checkout main
+          
+          # Сливаем изменения из оригинального репозитория
+          git merge upstream/main --allow-unrelated-histories -m "Chore: Auto-sync from upstream"
+          
+          # Отправляем обновленный код в ваш репозиторий
+          git push origin main
