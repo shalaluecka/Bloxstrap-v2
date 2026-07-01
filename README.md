@@ -47,3 +47,5 @@ Is the default Roblox launcher too limiting? **Bloxstrap** completely redefines 
 1. Ensure you have the **Microsoft .NET 6 Desktop Runtime** installed.
 2. Download the latest release from the Releases section.
 3. Run the installer and tailor your Roblox experience in just a few clicks!
+
+
